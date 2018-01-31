@@ -1,0 +1,4 @@
+{% set consumer_props = env_to_props('CONSUMER_', '') -%}
+{% for name, value in consumer_props.iteritems() -%}
+{{name}}={{value}}
+{% endfor -%}
