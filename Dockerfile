@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM confluentinc/cp-base
+FROM zeelos/cp-base:4.1.1-arm64v8
 MAINTAINER zeelos.io - https://zeelos.io
 
 ENV COMPONENT kafka-mirrormaker
