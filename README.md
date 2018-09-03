@@ -2,10 +2,12 @@
 
 A Docker image that executes a kafka MirrorMaker process. It follows the Dockerfile template creation as specified by Confluent's [own images](https://github.com/confluentinc/cp-docker-images).
 
+The image follows Confluent platform versioning so that is easier for you to match your own Kafka installation, that is you can use either tag `4.1.1` or `5.0.0` to match your specific versions.
+
 An example usage in a `docker-compose.yml` file can be like the following. Note the usage of `MIRRORMAKER_` prefix (for MirrorMaker specific configuration), `CONSUMER_` (for consumer configuration) and `PRODUCER_` (for producer configuration).
 
       kafka-mirrormaker:
-        image: zeelos/kafka-mirrormaker:latest
+        image: zeelos/kafka-mirrormaker:4.1.1
         environment:
           - MIRRORMAKER_WHITE_LIST=^server1_((?!req).)*$$
           - MIRRORMAKER_ABORT_ON_SEND_FAILURE=true
