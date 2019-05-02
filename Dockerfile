@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM confluentinc/cp-base
-MAINTAINER zeelos.io - https://zeelos.io
+FROM images.zeelos.io/library/cp-base:5.2.1
+LABEL maintainer="dev@zeelos.io" description="Kafka MirrorMaker - A stand-alone tool for copying data between two Apache Kafka clusters"
 
 ENV COMPONENT kafka-mirrormaker
 
