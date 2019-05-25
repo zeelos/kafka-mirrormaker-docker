@@ -1,5 +1,7 @@
 # kafka-mirrormaker-docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/zeelos/kafka-mirrormaker.svg?maxAge=604800)](https://hub.docker.com/r/zeelos/kafka-mirrormaker)
+
 A Docker image that executes a kafka MirrorMaker process. It follows the Dockerfile template creation as specified by Confluent's [own images](https://github.com/confluentinc/cp-docker-images).
 
 The image follows Confluent platform versioning so that is easier for you to match your own Kafka installation, that is you can use either tag `4.1.1` or `5.0.0` to match your specific versions.
